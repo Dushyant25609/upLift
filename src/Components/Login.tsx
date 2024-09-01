@@ -23,7 +23,6 @@ const Login = () => {
         .required('Organization email is required'),
       password: Yup.string()
         .min(6, 'Password must be at least 6 characters')
-        .max(12, 'Password must not exceed 12 characters')
         .required('Password is required'),
     }),
     onSubmit: async (values) => {
