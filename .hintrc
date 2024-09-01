@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ]
+  }
+}
