@@ -12,7 +12,7 @@ const Navbar: FC<NavbarProps> = () => {
             <h1 className="text-xl">Up Lift</h1>
             <div className="flex gap-4">
             <Link className="text-xl" to={"/Faculty/Dashboard"}>Dashboard</Link>
-            <Link onClick={()=> {
+            <Link className="text-red-600" onClick={()=> {
                 localStorage.removeItem("token");
                 dispatch(deleteTokenAction());
             }} to={"/Login/"}>Log out</Link>
