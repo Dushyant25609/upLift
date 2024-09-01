@@ -11,7 +11,6 @@ const Navbar: FC<NavbarProps> = () => {
         <div className="flex p-4 justify-between bg-white font-semibold shadow-md md:px-8">
             <h1 className="text-xl">Up Lift</h1>
             <div className="flex gap-4">
-            <Link className="text-xl" to={"/Faculty/Dashboard"}>Dashboard</Link>
             <Link className="text-red-600" onClick={()=> {
                 localStorage.removeItem("token");
                 dispatch(deleteTokenAction());
