@@ -17,7 +17,7 @@ const Seminars: FC<ResearchsProps> = ({researchs}) => {
             </div>
             <div className="flex flex-col gap-2">
                 {researchs.length == 1 && researchs.map( research => {return <SeminarCard key={research._id} project={research} />  } )}
-                {researchs.length > 1 && researchs.slice(0,2).map(researchs => {return <SeminarCard key={researchs._id} project={researchs} />})}
+                {researchs.length > 1 && researchs.map(researchs => {return <SeminarCard key={researchs._id} project={researchs} />})}
             </div>
         </div>
     )

@@ -18,7 +18,7 @@ const Certificates: FC<ResearchsProps> = ({researchs}) => {
             </div>
             <div className="flex flex-col gap-2">
                 {researchs.length == 1 && researchs.map( research => {return <CertificateCard key={research._id} project={research} />  } )}
-                {researchs.length > 1 && researchs.slice(0,2).map(researchs => {return <CertificateCard key={researchs._id} project={researchs} />})}
+                {researchs.length > 1 && researchs.map(researchs => {return <CertificateCard key={researchs._id} project={researchs} />})}
             </div>
         </div>
     )
